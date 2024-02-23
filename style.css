@@ -1,0 +1,134 @@
+.nav__responsive{
+    display: none;
+}
+
+.nav{
+    background-color: #afeeee;
+    padding: 18px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    text-align: center;
+}
+
+.nav__ul-li{
+    display: inline-block;
+    color: #000000;
+}
+.bi-list{
+    font-size: 25px;
+}
+i{
+   margin-left: 5px;
+   margin-right: 5px;
+   font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.title{
+    background-color:#e0ffff;
+    border: 1px solid #000;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    margin-top: 53px;
+}
+
+.section{
+    background-color:#b0e0e6;
+    display: inline-block;
+    width: 75%;
+    min-height: 80%;
+    padding: 20px;
+    top: 0;
+}
+
+.aside{
+    background-color: #87cefa;
+    display: inline-block;
+    width: 25%;
+    min-height: 80%;
+    padding: 20px;
+    top: 0;
+}
+.flex-container{
+    display: flex;
+}
+.footer__ul-li{
+    display: inline-block;
+}
+.footer{
+    background-color: #add8e6;
+    padding: 12px;
+    text-align: center;
+}
+@media only screen and (max-width: 500px){
+    .nav{
+        display: none;
+    }
+    .nav__responsive{
+        display: block;
+    }
+    .nav__responsive-ul-li{
+        background-color: #5dc460;
+        color: #000;
+    }
+    .nav__responsive-ul{
+        position: absolute;
+        background-color:  #5dc460;
+        height: 100vh;
+        left: -100%;
+        width: 75%;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+}
+    .nav__responsive-button{
+        height: 40px;
+        color: #000;
+        background-color: #42ab49;
+        text-align: right;
+        font-size: 30px;
+    }
+    .nav__responsive-button:hover + .nav__responsive-ul{
+        left: 0%;
+    }
+    .section{
+        background-color: #77dd77;
+        display: inline-block;
+        width: 100%;
+        
+       }
+       
+    .aside{
+        background-color: #a5eea0;
+        display: inline-block;
+        width: 100%;
+    
+    }
+    .flex-container{
+        display: block;
+    }
+    .title{
+        margin-top: 0px;
+        background-color: #cfffca;
+    }
+    .footer__ul{
+        display: flex;
+        text-align: right;
+        background-color: #cfffca;
+    }
+    .footer__ul-li{
+        margin-left: 5%;
+        text-align: right;
+    }
+    .footer{
+        background-color: #cfffca;
+    }
+}
